@@ -4,9 +4,10 @@ import { AppService } from './app.service';
 import { CatsController } from './cats/cats.controller';
 import { CatsService } from './cats/cats.service';
 import { MoviesModule } from './movies/movies.module';
+import { CommentsModule } from './comments/comments.module';
 
 @Module({
-  imports: [MoviesModule],
+  imports: [MoviesModule, CommentsModule],
   controllers: [AppController, CatsController],
   providers: [AppService, CatsService],
 })
